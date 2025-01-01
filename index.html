@@ -3,8 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>Happy New Year 2025!</title>
   <style>
     body {
@@ -14,6 +12,7 @@
       text-align: center;
       overflow: hidden;
       animation: glow 5s infinite alternate;
+      background: linear-gradient(to bottom, #000428, #004e92);
     }
 
     @keyframes glow {
@@ -23,8 +22,8 @@
     }
 
     h1 {
-      font-size: 3rem;
-      margin-top: 20%;
+      font-size: 8vw; /* Menyesuaikan ukuran font dengan lebar layar */
+      margin-top: 10vh;
       animation: fadeIn 2s ease-in-out infinite alternate, sparkle 1.5s infinite;
     }
 
@@ -39,6 +38,16 @@
       100% { text-shadow: 0 0 5px #fff, 0 0 10px #fff; }
     }
 
+    /* Audio player */
+    audio {
+      margin-top: 20px;
+      width: 90%;
+      max-width: 600px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    /* Fireworks */
     .fireworks {
       position: absolute;
       width: 5px;
@@ -53,6 +62,7 @@
       100% { transform: translateY(-300px) scale(0.1); opacity: 0; }
     }
 
+    /* Confetti */
     .confetti {
       position: absolute;
       width: 5px;
@@ -67,6 +77,7 @@
       100% { transform: translateY(0) rotate(360deg); }
     }
 
+    /* Bubbles */
     .bubble {
       position: absolute;
       width: 30px;
@@ -80,40 +91,17 @@
       0% { transform: translateY(100vh) scale(0.5); }
       100% { transform: translateY(-10vh) scale(1); opacity: 0; }
     }
-    {
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
-  text-align: center;
-  padding: 20px;
-}
-
-h1 {
-  color: #007bff;
-}
-
-audio {
-  margin-top: 20px;
-}
-
-
   </style>
 </head>
-<script>
-  // Kode JavaScript di sini
-  console.log("Halaman sudah dimuat!");
-</script>
 <body>
-  <h1>?? Happy New Year 2025🚀 ??</h1>
-  <p>Enjoy your celebration with this vibe! ??</p>
-  <script src="script.js"></script>
+  <h1>🚀 Happy New Year 2025! 🎉</h1>
+  <p>Enjoy your celebration with this vibe! 🎶</p>
+
   <!-- Audio Player -->
-  <audio controls>
+  <audio controls autoplay>
     <source src="daylight.mp3" type="audio/mp3">
     Your browser does not support the audio element.
   </audio>
-  
-  
 
   <!-- Fireworks Animation -->
   <div id="fireworks-container"></div>
@@ -166,7 +154,9 @@ audio {
 
     setInterval(createBubble, 300);
   </script>
-<script>
+
+  <!-- Auto Play Audio -->
+  <script>
     document.addEventListener("DOMContentLoaded", () => {
       const audio = document.querySelector("audio");
       audio.play();
@@ -174,5 +164,4 @@ audio {
   </script>
 
 </body>
-
 </html>
