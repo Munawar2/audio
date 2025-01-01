@@ -78,18 +78,39 @@
       0% { transform: translateY(100vh) scale(0.5); }
       100% { transform: translateY(-10vh) scale(1); opacity: 0; }
     }
+    {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #007bff;
+}
+
+audio {
+  margin-top: 20px;
+}
+
 
   </style>
 </head>
+<script>
+  // Kode JavaScript di sini
+  console.log("Halaman sudah dimuat!");
+</script>
 <body>
-  <h1>?? Happy New Year 2025! ??</h1>
+  <h1>?? Happy New Year 2025🚀 ??</h1>
   <p>Enjoy your celebration with this vibe! ??</p>
-
+  <script src="script.js"></script>
   <!-- Audio Player -->
   <audio controls>
     <source src="daylight.mp3" type="audio/mp3">
     Your browser does not support the audio element.
   </audio>
+  
   
 
   <!-- Fireworks Animation -->
@@ -143,6 +164,13 @@
 
     setInterval(createBubble, 300);
   </script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const audio = document.querySelector("audio");
+      audio.play();
+    });
+  </script>
 
 </body>
+
 </html>
